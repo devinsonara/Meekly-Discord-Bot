@@ -39,8 +39,8 @@ class MentionReply(commands.Cog):
             )
 
             # Quick Links ActionRow
-            invite_btn = Button(label="Invite Me", style=discord.ButtonStyle.link, url=self.bot.invite_link)
-            support_btn = Button(label="Support", style=discord.ButtonStyle.link, url=self.bot.support_link)
+            invite_btn = Button(label="Invite Me", style=discord.ButtonStyle.link, url="https://discord.com/oauth2/authorize?client_id=1493197835045306519&permissions=8&integration_type=0&scope=bot+applications.commands")
+            support_btn = Button(label="Support", style=discord.ButtonStyle.link, url="https://discord.gg/DNxZSJPKfA")
             vote_btn = Button(label="Vote", style=discord.ButtonStyle.link, url=self.bot.vote_link)
             
             links_row = ActionRow(invite_btn, support_btn, vote_btn)
@@ -49,7 +49,7 @@ class MentionReply(commands.Cog):
                 section,
                 Separator(),
                 links_row,
-                TextDisplay(f"-# Powered by CodeX Development"),
+                TextDisplay(f"-# Powered by QuickCloud Development"),
                 
             )
 
