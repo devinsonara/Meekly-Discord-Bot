@@ -39,10 +39,10 @@ class Uptime(commands.Cog):
         # Create the LayoutView
         view = LayoutView()
 
-        # Create the Section with a Thumbnail accessory (Meekly Style)
+        # Create the Section with a Thumbnail accessory (QuickCloud Style)
         section = Section(
             TextDisplay(
-                f"### {TIMER} Meekly Uptime\n"
+                f"### {TIMER} QuickCloud Uptime\n"
                 f"> **System Status:** Online\n"
                 f"```\n{self.format_uptime()}\n```"
             ),
@@ -56,7 +56,7 @@ class Uptime(commands.Cog):
         container = Container(
             section,
             Separator(),
-            TextDisplay("-# Power By Meekly Development")
+            TextDisplay("-# Power By QuickCloud Development")
         )
 
         view.add_item(container)
