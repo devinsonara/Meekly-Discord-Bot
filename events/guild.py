@@ -3,7 +3,7 @@ from discord.ext import commands
 import datetime
 
 # 🔧 Your log channel ID
-LOG_CHANNEL_ID = 1408111163526615170  
+LOG_CHANNEL_ID = 1500777470109159434  
 
 
 class GuildLog(commands.Cog):
