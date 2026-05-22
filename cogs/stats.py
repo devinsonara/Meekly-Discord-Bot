@@ -113,17 +113,17 @@ class StatsView(ui.LayoutView):
         yt_btn = ui.Button(
             label="Youtube",
             style=discord.ButtonStyle.link,
-            url="https://youtube.com/@CodeXDevs"
+            url="https://youtube.com/@Sleepybuddy"
         )
         support_btn = ui.Button(
             label="Support",
             style=discord.ButtonStyle.link,
-            url=self.bot.support_link
+            url="https://discord.gg/DNxZSJPKfA"
         )
         invite_btn = ui.Button(
             label="Free Hosting",
             style=discord.ButtonStyle.link,
-            url="https://nexio.host/"
+            url=" https://discord.gg/DNxZSJPKfA"
         )
         return ui.ActionRow(yt_btn, support_btn, invite_btn)
 
@@ -215,8 +215,8 @@ class StatsView(ui.LayoutView):
         c.add_item(
             ui.TextDisplay(
                 f"```yaml\n"
-                f"Main Developer: Not_Op_gamer404_YT\n"
-                f"Co-Developer: ray.dev\n"
+                f"Main Developer: kc5w\n"
+                f"Co-Developer: kc5w\n"
                 f"Framework: Discord.py v{discord.__version__}\n"
                 f"Python: {platform.python_version()}\n"
                 f"```"
