@@ -220,7 +220,7 @@ class NPManager:
             # ---------- NP ADD ----------
             if sub == "add":
                 if not self.is_dev(message.author.id):
-                    await message.channel.send(f"{CROSS_MARK} You are not a developer.")
+                    await message.channel.send(f"{CROSS_MARK} You are not My PAPA.")
                     return
                 target = None
                 if message.mentions:
@@ -243,7 +243,7 @@ class NPManager:
             # ---------- NP REMOVE ----------
             if sub == "remove":
                 if not self.is_dev(message.author.id):
-                    await message.channel.send(f"{CROSS_MARK} You are not a developer.")
+                    await message.channel.send(f"{CROSS_MARK} You are not My PAPA.")
                     return
                 target = None
                 if message.mentions:
