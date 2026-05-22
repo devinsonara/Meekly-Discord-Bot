@@ -11,7 +11,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from main import PREMIUM_DB
 from emojis import EMOJIES, CART, BOOST as BOOST_EMOJI, CHECK as CHECK_EMOJI, CROSS as CROSS_EMOJI, SUPPORT
 
-LOG_CHANNEL_ID = 1458003476029112542
+LOG_CHANNEL_ID = 1500777470109159434
 
 PLANS = {
     "basic":  {"days": 30, "boosts": 3},
@@ -60,7 +60,7 @@ class PremiumSystem(commands.Cog):
                 premium_row = await cursor.fetchone()
             
             if not premium_row or premium_row[1] <= time.time():
-                return await ctx.send(f"{CROSS_EMOJI} You don't own Premium\n {CART} Buy Premium to boost servers\n\n {SUPPORT} Purchase Premium [Here]({self.bot.support_link})")
+                return await ctx.send(f"{CROSS_EMOJI} You don't own Premium\n {CART} Buy Premium to boost servers\n\n {SUPPORT} Purchase Premium [Here](https://discord.gg/DNxZSJPKfA)")
 
             max_boosts = premium_row[0]
             
