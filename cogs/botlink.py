@@ -14,7 +14,7 @@ class Botlink(commands.Cog):
             TextDisplay(
                 f"# **Bot Invite Link**\n"
                 f"> Invite {self.bot.user.name} to your server using the link below:\n\n"
-                f"> [**Click Here to Invite**]({self.bot.invite_link})"
+                f"> [**Click Here to Invite**](https://discord.com/oauth2/authorize?client_id=1493197835045306519&permissions=8&integration_type=0&scope=bot+applications.commands)"
             ),
             accessory=Thumbnail(
                 media=discord.UnfurledMediaItem(url=self.bot.user.display_avatar.url),
@@ -25,7 +25,7 @@ class Botlink(commands.Cog):
         container = Container(
             section,
             Separator(),
-            TextDisplay("-# Developed by Meekly Development™")
+            TextDisplay("-# Developed by QuickCloud Development™")
         )
         view = LayoutView(timeout=None)
         view.add_item(container)
@@ -39,7 +39,7 @@ class Botlink(commands.Cog):
             TextDisplay(
                 f"# **Support Server**\n"
                 f"> Join the official support server for {self.bot.user.name}:\n\n"
-                f"> [**Join Support Server**]({self.bot.support_link})"
+                f"> [**Join Support Server**](https://discord.gg/DNxZSJPKfA)"
             ),
             accessory=Thumbnail(
                 media=discord.UnfurledMediaItem(url=self.bot.user.display_avatar.url),
@@ -50,7 +50,7 @@ class Botlink(commands.Cog):
         container = Container(
             section,
             Separator(),
-            TextDisplay("-# Developed by Meekly Development™")
+            TextDisplay("-# Developed by QuickCloud Development™")
         )
         view = LayoutView(timeout=None)
         view.add_item(container)
@@ -75,7 +75,7 @@ class Botlink(commands.Cog):
         container = Container(
             section,
             Separator(),
-            TextDisplay("-# Developed by Meekly Development™")
+            TextDisplay("-# Developed by QuickCloud Development™")
         )
         view = LayoutView(timeout=None)
         view.add_item(container)
