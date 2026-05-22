@@ -280,13 +280,13 @@ class HelpView(LayoutView):
         support_btn = Button(
             label="Supoort",
             style=discord.ButtonStyle.link,
-            url="https://discord.gg/codexdev"
+            url="https://discord.gg/DNxZSJPKfA"
         )
         
         invite_btn = Button(
             label="Free Hosting",
             style=discord.ButtonStyle.link,
-            url="https://nexio.host/"
+            url="https://discord.com/oauth2/authorize?client_id=1493197835045306519&permissions=8&integration_type=0&scope=bot+applications.commands"
         )
         
         quick_links_row = ActionRow(yt_btn, support_btn, invite_btn)
