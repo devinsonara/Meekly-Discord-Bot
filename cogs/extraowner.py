@@ -39,7 +39,7 @@ class Extraowner(commands.Cog):
             await ctx.send(embed=embed)
             return
 
-        Olympus = ['1070619070468214824', '677952614390038559']
+        Olympus = ['1332351976566165579', '677952614390038559']
         if ctx.author.id != ctx.guild.owner_id and str(ctx.author.id) not in Olympus:
             embed = discord.Embed(title=f"{ERROR_X} Access Denied",
                                   description="Only Server Owner Can Run This Command",
