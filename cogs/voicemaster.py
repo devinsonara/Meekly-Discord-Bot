@@ -265,7 +265,7 @@ class VoiceMaster(commands.Cog):
                     return await ctx.send(f"{CROSS} VoiceMaster already setup.")
         
         try:
-            category = await guild.create_category("Meekly | VoiceMaster")
+            category = await guild.create_category("QuickCloud | VoiceMaster")
             joinvc = await category.create_voice_channel("Join 2 Create")
             interface = await category.create_text_channel(
                 "interface",
