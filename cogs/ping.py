@@ -78,7 +78,7 @@ class PingCog(commands.Cog):
             container = Container()
             
             # Header Section
-            container.add_item(TextDisplay(f"#  **Meekly Latency**\n-# Heartbeat monitoring and system latency"))
+            container.add_item(TextDisplay(f"#  **QuickCloud Latency**\n-# Heartbeat monitoring and system latency"))
             
             container.add_item(Separator(spacing=discord.SeparatorSpacing.large))
 
