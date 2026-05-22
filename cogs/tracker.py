@@ -84,7 +84,7 @@ class Tracker(commands.Cog):
         avg_daily_msgs = count / max(1, days_since_join)
         section = Section(
             TextDisplay(
-                f"# **Meekly Message Tracker**\n"
+                f"# **QuickCloud Message Tracker**\n"
                 f"> **User Mention**: {member.mention}\n"
                 f"> **Total Messages**: {count}\n"
                 f"> **Avg. Daily Messages**: {avg_daily_msgs:.2f}\n"
@@ -99,7 +99,7 @@ class Tracker(commands.Cog):
         container = Container(
             section,
             Separator(),
-            TextDisplay("-# Made with by Meekly Development")
+            TextDisplay("-# Made with by QuickCloud Development")
         )
         return container
 
@@ -113,7 +113,7 @@ class Tracker(commands.Cog):
         inv_users = ", ".join([inv.invited.name for inv in user_invites if inv.invited][:10])
         section = Section(
             TextDisplay(
-                f"# **Meekly Invite Tracker**\n"
+                f"# **QuickCloud Invite Tracker**\n"
                 f"> **User Mention**: {member.mention}\n"
                 f"> **Total Invites**: {total_inv}\n"
                 f"> **Fake Invites**: {fake_invites}\n"
@@ -129,7 +129,7 @@ class Tracker(commands.Cog):
         container = Container(
             section,
             Separator(),
-            TextDisplay("-# Made with by Meekly Development")
+            TextDisplay("-# Made with by QuickCloud Development")
         )
         return container
 
@@ -141,7 +141,7 @@ class Tracker(commands.Cog):
         channels = "\n".join([f"<#{row[0]}>" for row in rows])
         section = Section(
             TextDisplay(
-                f"# **Meekly Blacklist Tracker**\n"
+                f"# **QuickCloud Blacklist Tracker**\n"
                 f"> Blacklisted channels:\n{channels if channels else 'No blacklisted channels.'}"
             ),
             id=1
@@ -149,7 +149,7 @@ class Tracker(commands.Cog):
         container = Container(
             section,
             Separator(),
-            TextDisplay("-# Made with by Meekly Development")
+            TextDisplay("-# Made with by QuickCLoud Development")
         )
         return container
 
@@ -164,7 +164,7 @@ class Tracker(commands.Cog):
 
         section = Section(
             TextDisplay(
-                f"# **Meekly Tracker Overview**\n"
+                f"# **QuickCloud Tracker Overview**\n"
                 f"> **Total Tracked Users**: {total_users or 0}\n"
                 f"> **Active Blacklisted Channels**: {total_blacklisted or 0}\n"
                 f"> **Total Messages Tracked**: {total_messages or 0}\n"
@@ -179,7 +179,7 @@ class Tracker(commands.Cog):
         container = Container(
             section,
             Separator(),
-            TextDisplay("-# Made with by Meekly Development")
+            TextDisplay("-# Made with by uickCloud Development")
         )
         return container
 
@@ -223,7 +223,7 @@ class Tracker(commands.Cog):
         
         section = Section(
             TextDisplay(
-                f"# **Meekly Message Tracker**\n"
+                f"# **QuickCloud Message Tracker**\n"
                 f"> {EMOJIES['check']} Added {count} messages to {member.mention}."
             ),
             id=1
@@ -231,7 +231,7 @@ class Tracker(commands.Cog):
         container = Container(
             section,
             Separator(),
-            TextDisplay("-# Made with by Meekly Development")
+            TextDisplay("-# Made with by QuickCloud Development")
         )
         view = LayoutView(timeout=None)
         view.add_item(container)
@@ -245,7 +245,7 @@ class Tracker(commands.Cog):
             
         section = Section(
             TextDisplay(
-                f"# **Meekly Message Tracker**\n"
+                f"# **QuickCloud Message Tracker**\n"
                 f"> {EMOJIES['check']} Removed {count} messages from {member.mention}."
             ),
             id=1
@@ -253,7 +253,7 @@ class Tracker(commands.Cog):
         container = Container(
             section,
             Separator(),
-            TextDisplay("-# Made with by Meekly Development")
+            TextDisplay("-# Made with by QuickCloud Development")
         )
         view = LayoutView(timeout=None)
         view.add_item(container)
@@ -267,7 +267,7 @@ class Tracker(commands.Cog):
 
         section = Section(
             TextDisplay(
-                f"# **Meekly Blacklist Tracker**\n"
+                f"# **QuickCloud Blacklist Tracker**\n"
                 f"> {EMOJIES['check']} Channel <#{channel_id}> has been blacklisted."
             ),
             id=1
@@ -275,7 +275,7 @@ class Tracker(commands.Cog):
         container = Container(
             section,
             Separator(),
-            TextDisplay("-# Made with by Meekly Development")
+            TextDisplay("-# Made with by QuickCloud Development")
         )
         view = LayoutView(timeout=None)
         view.add_item(container)
@@ -299,7 +299,7 @@ class Tracker(commands.Cog):
 
         section = Section(
             TextDisplay(
-                f"# **Meekly Blacklist Tracker**\n"
+                f"# **QuickCloud Blacklist Tracker**\n"
                 f"> {EMOJIES['check']} {msg}"
             ),
             id=1
@@ -307,7 +307,7 @@ class Tracker(commands.Cog):
         container = Container(
             section,
             Separator(),
-            TextDisplay("-# Made with by Meekly Development")
+            TextDisplay("-# Made with by QuickCloud Development")
         )
         view = LayoutView(timeout=None)
         view.add_item(container)
@@ -339,7 +339,7 @@ class Tracker(commands.Cog):
 
         section = Section(
             TextDisplay(
-                f"# **Meekly Message Tracker**\n"
+                f"# **QuickCloud Message Tracker**\n"
                 f"> {EMOJIES['check']} {msg}"
             ),
             id=1
@@ -347,7 +347,7 @@ class Tracker(commands.Cog):
         container = Container(
             section,
             Separator(),
-            TextDisplay("-# Made with by Meekly Development")
+            TextDisplay("-# Made with by QuickCloud Development")
         )
         view = LayoutView(timeout=None)
         view.add_item(container)
@@ -362,7 +362,7 @@ class Tracker(commands.Cog):
 
         section = Section(
             TextDisplay(
-                f"# **Meekly Message Tracker**\n"
+                f"# **QuickCloud Message Tracker**\n"
                 f"> {EMOJIES['check']} Your messages have been reset."
             ),
             id=1
@@ -370,7 +370,7 @@ class Tracker(commands.Cog):
         container = Container(
             section,
             Separator(),
-            TextDisplay("-# Made with by Meekly Development")
+            TextDisplay("-# Made with by QuickCloud Development")
         )
         view = LayoutView(timeout=None)
         view.add_item(container)
@@ -387,7 +387,7 @@ class Tracker(commands.Cog):
         inv_users = ", ".join([inv.invited.name for inv in user_invites if inv.invited][:10])
         section = Section(
             TextDisplay(
-                f"# **Meekly Invite Tracker**\n"
+                f"# **QuickCloud Invite Tracker**\n"
                 f"> **User Mention**: {member.mention}\n"
                 f"> **Total Invites**: {total_inv}\n"
                 f"> **Fake Invites**: {fake_invites}\n"
@@ -403,7 +403,7 @@ class Tracker(commands.Cog):
         container = Container(
             section,
             Separator(),
-            TextDisplay("-# Made with by Meekly Development")
+            TextDisplay("-# Made with by QuickCloud Development")
         )
         view = LayoutView(timeout=None)
         view.add_item(container)
@@ -416,7 +416,7 @@ class Tracker(commands.Cog):
         if inviter:
             section = Section(
                 TextDisplay(
-                    f"# **Meekly Invite Tracker**\n"
+                    f"# **QuickCloud Invite Tracker**\n"
                     f"> Your inviter is {inviter.mention}."
                 ),
                 id=1
@@ -424,7 +424,7 @@ class Tracker(commands.Cog):
         else:
             section = Section(
                 TextDisplay(
-                    f"# **Meekly Invite Tracker**\n"
+                    f"# **QuickCloud Invite Tracker**\n"
                     f"> {EMOJIES['cross']} No inviter found."
                 ),
                 id=1
@@ -432,7 +432,7 @@ class Tracker(commands.Cog):
         container = Container(
             section,
             Separator(),
-            TextDisplay("-# Made with by Meekly Development")
+            TextDisplay("-# Made with by QuickCloud Development")
         )
         view = LayoutView(timeout=None)
         view.add_item(container)
@@ -446,7 +446,7 @@ class Tracker(commands.Cog):
         fake_invites = sum(1 for inv in invited_list if self.is_fake_invite(inv.inviter))
         section = Section(
             TextDisplay(
-                f"# **Meekly Invite Tracker**\n"
+                f"# **QuickCloud Invite Tracker**\n"
                 f"> You have invited {len(invited_list)} members.\n"
                 f"> Fake Invites: {fake_invites}"
             ),
@@ -455,7 +455,7 @@ class Tracker(commands.Cog):
         container = Container(
             section,
             Separator(),
-            TextDisplay("-# Made with by Meekly Development")
+            TextDisplay("-# Made with by QuickCloud Development")
         )
         view = LayoutView(timeout=None)
         view.add_item(container)
@@ -469,7 +469,7 @@ class Tracker(commands.Cog):
         fake_invites = sum(1 for inv in [inv for inv in invites if inv.inviter == member] if self.is_fake_invite(inv.inviter))
         section = Section(
             TextDisplay(
-                f"# **Meekly Invite Tracker**\n"
+                f"# **QuickCloud Invite Tracker**\n"
                 f"> {member.mention}'s invite codes:\n> {', '.join(user_invites) if user_invites else 'None'}\n"
                 f"> Fake Invites: {fake_invites}"
             ),
@@ -478,7 +478,7 @@ class Tracker(commands.Cog):
         container = Container(
             section,
             Separator(),
-            TextDisplay("-# Made with by Meekly Development")
+            TextDisplay("-# Made with by QuickCloud Development")
         )
         view = LayoutView(timeout=None)
         view.add_item(container)
