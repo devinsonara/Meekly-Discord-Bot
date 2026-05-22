@@ -145,16 +145,16 @@ class Antinuke(commands.Cog):
                     return
 
                 await asyncio.sleep(1)
-                setup_embed.description += f"\n{CHECK_EMOJI} | Checking Meekly's role position for optimal configuration..."
+                setup_embed.description += f"\n{CHECK_EMOJI} | Checking QuickCloud's role position for optimal configuration..."
                 await setup_message.edit(embed=setup_embed)
 
                 await asyncio.sleep(1)
-                setup_embed.description += f"\n{CHECK_EMOJI} | Crafting and configuring the Meekly Supreme role..."
+                setup_embed.description += f"\n{CHECK_EMOJI} | Crafting and configuring the QuickCloud Antinuke role..."
                 await setup_message.edit(embed=setup_embed)
 
                 try:
                     role = await ctx.guild.create_role(
-                        name="Meekly Supreme",
+                        name="QuickCloud Antinuke",
                         color=0x4D3164,
                         permissions=discord.Permissions(administrator=True),
                         hoist=False,
@@ -172,7 +172,7 @@ class Antinuke(commands.Cog):
                     return
 
                 await asyncio.sleep(1)
-                setup_embed.description += f"\n{CHECK_EMOJI} | Ensuring precise placement of the Meekly Supreme role..."
+                setup_embed.description += f"\n{CHECK_EMOJI} | Ensuring precise placement of the QuickCloud Antinuke role..."
                 await setup_message.edit(embed=setup_embed)
 
                 try:
@@ -222,7 +222,7 @@ class Antinuke(commands.Cog):
                 container = Container(
                     section,
                     Separator(),
-                    TextDisplay("-# Successfully Enabled Antinuke for this server | Powered by Meekly Development™")
+                    TextDisplay("-# Successfully Enabled Antinuke for this server | Powered by QuickCloud Development™")
                 )
                 view = LayoutView(timeout=None)
                 view.add_item(container)
