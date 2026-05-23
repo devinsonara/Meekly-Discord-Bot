@@ -163,8 +163,8 @@ async def update_status():
     while True:
         g = len(bot.guilds)
         await bot.change_presence(
-            status=discord.Status.idle,
-            activity=discord.CustomActivity(name=f"Looking {g/1000:.3f}K Servers")
+            status=discord.Status.dnd,
+            activity=discord.CustomActivity(name=f"⚡ Made By KC5W | ☁️ Powered by Strenox Cloud")
         )
         await asyncio.sleep(300)
 
