@@ -19,9 +19,9 @@ if not TOKEN:
 # =========================
 # BASIC CONFIG
 # =========================
-OWNER_ID = 870179991462236170
-DEV_ID = 870179991462236170
-DEVELOPER_IDS = [870179991462236170]
+OWNER_ID = 1332351976566165579
+DEV_ID = 1332351976566165579
+DEVELOPER_IDS = [1332351976566165579]
 DEFAULT_PREFIX = "+"
 
 CORE_DB = Path("db/core.db")
@@ -36,8 +36,8 @@ ANTINUKE_DIR = Path("antinuke")
 # =========================
 # PREMIUM CONFIG
 # =========================
-SUPPORT_LINK = "https://discord.gg/codexdev"
-INVITE_LINK = "https://discord.com/oauth2/authorize?client_id=1409860321295732808&scope=bot&permissions=8"
+SUPPORT_LINK = "https://discord.gg/DNxZSJPKfA"
+INVITE_LINK = "https://discord.com/oauth2/authorize?client_id=1493197835045306519&permissions=8&integration_type=0&scope=bot+applications.commands"
 VOTE_LINK = "https://top.gg/bot/1409860321295732808/vote"
 SUPPORT_SERVER = SUPPORT_LINK
 BOOSTS_REQUIRED = 1
